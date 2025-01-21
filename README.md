@@ -35,7 +35,27 @@ limitations under the License.
 
 > Convert a matrix from row-major layout to column-major layout or vice versa.
 
-<section class = "usage">
+<section class="installation">
+
+## Installation
+
+```bash
+npm install @stdlib/lapack-base-sge-trans
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
+
+<section class="usage">
 
 ## Usage
 
@@ -76,14 +96,14 @@ var Float32Array = require( '@stdlib/array-float32' );
 
 // Initial arrays...
 var A0 = new Float32Array( [ 0.0, 1.0, 2.0, 3.0, 4.0 ] );
-var Out0 = new Float32Array( [ 0.0, 1.0, 2.0, 3.0, 4.0 ] );
+var out0 = new Float32Array( [ 0.0, 1.0, 2.0, 3.0, 4.0 ] );
 
 // Create offset views...
 var A1 = new Float32Array( A0.buffer, A0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var Out1 = new Float32Array( Out0.buffer, Out0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
+var out1 = new Float32Array( out0.buffer, out0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-sgetrans( 'row-major', 2, 2, A1, 2, Out1, 2 );
-// Out0 => <Float32Array>[ 0.0, 1.0, 3.0, 2.0, 4.0 ]
+sgetrans( 'row-major', 2, 2, A1, 2, out1, 2 );
+// out0 => <Float32Array>[ 0.0, 1.0, 3.0, 2.0, 4.0 ]
 ```
 
 #### sgetrans.ndarray( M, N, A, sa1, sa2, oa, out, so1, so2, oo )
@@ -232,26 +252,6 @@ console.log( ndarray2array( out, shapeOut, stridesOut, 0, 'row-major' ) );
 
 <!-- C usage documentation. -->
 
-<section class="installation">
-
-## Installation
-
-```bash
-npm install @stdlib/lapack-base-sge-trans
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
-
 <section class="usage">
 
 ### Usage
@@ -338,7 +338,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
