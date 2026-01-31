@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/lapack-base-sge-trans",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Convert a matrix from row-major layout to column-major layout or vice versa.",
   "license": "Apache-2.0",
   "author": {
@@ -39,7 +39,7 @@
   "dependencies": {
     "@stdlib/assert-is-error": "^0.2.2",
     "@stdlib/blas-base-assert-is-layout": "^0.0.2",
-    "@stdlib/ndarray-base-assert-is-column-major-string": "github:stdlib-js/ndarray-base-assert-is-column-major-string#main",
+    "@stdlib/ndarray-base-assert-is-column-major-string": "^0.1.0",
     "@stdlib/ndarray-base-assert-is-row-major": "^0.2.2",
     "@stdlib/string-format": "^0.2.2",
     "@stdlib/types": "^0.4.3",
