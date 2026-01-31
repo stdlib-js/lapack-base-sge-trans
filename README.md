@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import sgetrans from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-sge-trans@deno/mod.js';
+import sgetrans from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-sge-trans@v0.1.0-deno/mod.js';
 ```
 
 #### sgetrans( order, M, N, A, LDA, out, LDO )
@@ -154,7 +154,7 @@ import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-to
 import shape2strides from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-shape2strides@deno/mod.js';
 import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-numel@deno/mod.js';
 import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
-import sgetrans from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-sge-trans@deno/mod.js';
+import sgetrans from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-sge-trans@v0.1.0-deno/mod.js';
 
 var shapeA = [ 2, 3 ];
 var shapeOut = [ 3, 2 ];
