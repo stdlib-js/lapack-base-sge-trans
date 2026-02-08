@@ -44,7 +44,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-sgetrans = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-sge-trans@umd/browser.js' )
+sgetrans = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-sge-trans@v0.1.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -56,7 +56,7 @@ var sgetrans = require( 'path/to/vendor/umd/lapack-base-sge-trans/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-sge-trans@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-sge-trans@v0.1.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -181,7 +181,7 @@ sgetrans.ndarray( 2, 2, A, 2, 1, 1, out, 2, 1, 2 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-shape2strides@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-numel@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-sge-trans@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-sge-trans@v0.1.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
