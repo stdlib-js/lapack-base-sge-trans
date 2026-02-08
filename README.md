@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import sgetrans from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-sge-trans@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/lapack-base-sge-trans/tags). For example,
+
+```javascript
 import sgetrans from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-sge-trans@v0.1.1-deno/mod.js';
 ```
 
@@ -154,7 +159,7 @@ import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-to
 import shape2strides from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-shape2strides@deno/mod.js';
 import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-numel@deno/mod.js';
 import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
-import sgetrans from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-sge-trans@v0.1.1-deno/mod.js';
+import sgetrans from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-sge-trans@deno/mod.js';
 
 var shapeA = [ 2, 3 ];
 var shapeOut = [ 3, 2 ];
